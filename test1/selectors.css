@@ -1,0 +1,27 @@
+﻿[alt="Pollution"]{
+	border:5px dashed red;
+}
+
+[src*=".jpg"]{
+	margin-left: 50px;
+}
+
+[data-description="rule even"]{
+	background-color:grey;
+}
+
+[data-description="even rule"]{
+	background-color:grey;
+}
+
+[data-description*="even"]{
+	font-size:24px;
+}
+
+[href^="https://"]{
+	color:green;
+}
+
+span[lang*="en"]{
+	font-size:28px;
+}
