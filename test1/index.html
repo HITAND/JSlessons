@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+	.header{
+		background-color:darkturquoise;
+		height:40px;
+	}
+	.nav-list{
+		display: inline-block;
+		list-style: none;
+		position: relative;
+		bottom:5px;
+	}
+	.nav-item{
+		float: left;
+		color:white;
+		padding-left:16px;
+	}
+	main{
+		height: 5000px;
+		color:beige;
+	}
+	.content{
+		position:absolute;
+		top:50%;
+		right:50%;
+	}
+	.head{
+		background-color:aquamarine;
+		width:200px;
+		height: 200px;
+
+	}
+	.ear{
+		background-color:brown;
+		width:40px;
+		height:60px;
+		float:left;
+		position: relative;
+		bottom:60px;
+	}
+	.ear_right{
+		position: relative;
+		right:40px;
+	}
+	.ear_left{
+		position: relative;
+		left:160px;
+	}
+	.eye{
+		width: 30px;
+		height: 30px;
+		border-radius:100%;
+		background-color:grey;
+		float:left;
+		position: relative;
+	   right:40px;
+		top:80px;
+	}
+	.eye_left{
+		position: relative;
+		left:20px;
+	}
+  </style>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-item">Home</li>
+          <li class="nav-item">Products</li>
+          <li class="nav-item">Contacts</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="head">
+        <div class="ear ear_right"></div>
+        <div class="ear ear_left"></div>
+        <div class="eye eye_right"></div>
+        <div class="eye eye_left"></div>
+      </div>
+    </main>
+  </body>
+</html>
