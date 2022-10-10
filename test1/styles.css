@@ -1,0 +1,18 @@
+﻿header{
+	text-align: center;
+}
+
+.articles-list{
+	display: flex;
+	height: 50vh;
+	flex-wrap:wrap;
+}
+
+.article{
+	flex-grow: 1;
+	flex-basis:300px;
+	min-width: 300px;
+	margin:8px;
+	padding: 16px;
+	background-color:bisque;
+}
