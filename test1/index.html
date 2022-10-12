@@ -4,32 +4,34 @@
     <meta charset="UTF-8" />
     <title>Document</title>
 	 <style>
-		*{
+*{
 	box-sizing: border-box;
 }
 
+body{
+	margin:16px;
+}
 .text{
 	text-align: center;
 	display: inline-block;
 }
 
 p{
+	cursor: pointer;
 	border-bottom: 1px dotted black;
 	margin:0px 0px 5px 0px;
 }
 
 .tooltip{
-	display: block;
+	display: none;
 	background-color: grey;
 	padding: 8px;
 	border-radius: 4px;
 	color:white;
-	cursor: pointer;
 }
 
-.tooltip:hover{
-	position: relative;
-	bottom: -40px;
+.text:hover > .tooltip{
+	display: block;
 }
 	 </style>
   </head>
