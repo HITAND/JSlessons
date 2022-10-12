@@ -18,13 +18,14 @@ body{
 	display: inline-block;
 }
 
-.text{
+p{
+	cursor: pointer;
 	border-bottom: 1px dotted black;
 	margin:0px 0px 5px 0px;
 }
 
 .tooltip{
-	display: none;
+	display: block;
 	background-color: grey;
 	padding: 8px;
 	border-radius: 4px;
@@ -34,11 +35,16 @@ body{
 .text:hover > .tooltip{
 	display: block;
 }
+
+.text:hover > .tooltip{
+	position: relative;
+	bottom:-40px;
+}
 	 </style>
   </head>
   <body>
     <div class="text">
-      Hover over me
+      <p>Hover over me</p>
       <span class="tooltip">I'm a tooltip</span>
     </div>
   </body>
