@@ -12,7 +12,7 @@ body{
 	line-height:32px;
 	font-weight: 700;
 	text-align: center;
-	background-image: url(/nature.jpeg);
+	background-image: url('/nature.jpeg');
 	background-position: center;
 	background-size:cover;
 	color:white;
