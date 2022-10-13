@@ -1,0 +1,19 @@
+﻿*{
+	box-sizing:border-box;
+}
+body{
+	display: flex;
+	justify-content: center;
+}
+.mountains{
+	height:500px;
+	width:300px;
+	font-size:32px;
+	line-height:32px;
+	font-weight: 700;
+	text-align: center;
+	background-image: url(nature.png);
+	background-position: center;
+	background-size:cover;
+	color:white;
+}
