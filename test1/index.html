@@ -13,14 +13,13 @@
 		*{
 			box-sizing:border-box;
 		}
-		.image-container > .image{
-			width: 500px;
-			height: 35vh;
+		.image-container{
+			position: relative;
 		}
 		.image{
 			display: block;
-			width: 25%;
-			height: 30vh;
+			width: 500px;
+			height: 40vh;
 			margin:0 auto;
 			background-size:contain;
 		}
@@ -34,13 +33,13 @@
 			font-size: 12px;
 			text-transform: uppercase;
 			font-weight: 700;
-			opacity: 1;
+			opacity: 0.5;
 			position: absolute;
-			top: calc(18% - 25px);
+			top: calc(50% - 25px);
 			left: calc(50% - 100px);
 		}
 		.image-button:hover{
-			opacity: 0.5;
+			opacity: 1;
 		}
 	 </style>
   </head>
