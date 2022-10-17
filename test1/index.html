@@ -28,18 +28,18 @@
 
 		<div class="form-control">
 			<label>Age</label>
-			<input type="number" minvalue="3" maxvalue="10" name="age">
+			<input type="number" value="17" name="age">
 		</div>
 
 		<div class="form-control">
-			<input type="checkbox" name="agree">
+			<input type="checkbox" name="agree" disabled>
 			<label>Accept terms and conditions</label>
 		</div>
 
 		<div class="choose-gender">
-			<input type="radio" name="gender" ><label> Male</label>
-			<input type="radio" name="gender"><label> Female</label>
-			<input type="radio" name="gender" checked
+			<input type="radio" id="gender-male" name="gender" ><label> Male</label>
+			<input type="radio" id="gender-female" name="gender"><label> Female</label>
+			<input type="radio" id="gender-secret" name="gender" checked
 			><label> Secret</label>
 		</div>
 
