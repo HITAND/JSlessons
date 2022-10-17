@@ -13,6 +13,9 @@
 		*{
 			box-sizing:border-box;
 		}
+		body{
+			margin: 16px;
+		}
 		input[type="checkbox"]{
 			visibility: hidden;
 			width: 0;
@@ -31,7 +34,6 @@
 			padding-left: 35px;
 			position: relative;
 			font-size: 24px;
-			margin-left: 16px;
 		}
 		.checkbox input:checked + .checkmark{
 			background-color:#006400;
@@ -42,8 +44,8 @@
   <body>
 	<label class="checkbox">
 		Checkbox
-	<input id="custom-checkbox" type="checkbox" name="agree">
+	<input id="custom-checkbox" type="checkbox" name="agree" checked>
 		<span class="checkmark" for="custom-checkbox"></span>
-	</label>
+	</label>	
   </body>
 </html>
