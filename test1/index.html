@@ -13,45 +13,40 @@
 		*{
 			box-sizing:border-box;
 		}
-		.image-container{
-			position: relative;
+		div{
+			margin: 16px;
 		}
-		.image{
-			display: block;
-			max-width: 100%;
-			margin:0 auto;
-			background-size:contain;
-		}
-		.image-button{
-			width: 200px;
-			height:50px;
-			line-height: 50px;
-			text-align: center;
-			background-color:bisque;
-			cursor: pointer;
-			font-size: 12px;
-			text-transform: uppercase;
-			font-weight: 700;
-			opacity: 0.5;
-			position: absolute;
-			top: calc(50% - 25px);
-			left: calc(50% - 100px);
-		}
-		.image-button:hover{
-			opacity: 1;
-		}
-		 
 	 </style>
   </head>
 
   <body>
-    <div class="image-container">
-      <img
-        class="image"
-        src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/hw1/big.jpeg"
-        alt="Forest"
-      />
-      <span class="image-button">Later I'll do something</span>
-    </div>
+	<form>
+		<div class="form-control">
+			<input type="text" name="LastName" value="Emerson" readonly>
+		</div>
+
+		<div class="form-control">
+			<input type="number" value="17" name="age">
+		</div>
+
+		<div class="form-control">
+			<input type="checkbox" name="agree" disabled>
+			<label>Accept terms and conditions</label>
+		</div>
+
+		<div class="choose-gender">
+			<input type="radio" name="gender"><labe>Mail</labe>
+			<input type="radio" name="gender"><labe>Female</labe>
+			<input type="radio" name="gender"><labe>Secret</labe>
+		</div>
+
+		<div class="form-control">
+			<textarea maxlength="10" name="description" placeholder="Write description..."></textarea>
+		</div>
+
+		<div class="form-control">
+			<button type="submit">Submit</button>
+		</div>
+	</form>
   </body>
 </html>
