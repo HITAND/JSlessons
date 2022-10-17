@@ -13,38 +13,37 @@
 		*{
 			box-sizing:border-box;
 		}
-		div{
-			margin: 16px;
+		input[type="checkbox"]{
+			visibility: hidden;
+			width: 0;
+			height:0;
+		}
+		.checkmark{
+			width: 25px;
+			height:25px;
+			background-color: #d3d3d3;
+			display: inline-block;
+			position: absolute;
+			top:0;
+			left:0;
+		}
+		.checkbox{
+			padding-left: 35px;
+			position: relative;
+			font-size: 24px;
+			margin-left: 16px;
+		}
+		.checkbox input:checked + .checkmark{
+			background-color:#006400;
 		}
 	 </style>
   </head>
 
   <body>
-	<form>
-		<div class="form-control">
-			<label for="last-name-form-control">Last Name</label>
-			<input type="text" id="last-name-form-control" name="lastName" value="Emerson" readonly>
-		</div>
-		<div class="form-control">
-			<label for="age-form-control">Age</label>
-			<input type="number" id="age-form-control" min="3" max="10" value="17" name="age">
-		</div>
-		<div class="form-control">
-			<input type="checkbox" name="agree" disabled>
-			<label>Accept terms and conditions</label>
-		</div>
-		<div class="choose-gender">
-			<input type="radio" id="gender-male" name="gender" ><label> Male</label>
-			<input type="radio" id="gender-female" name="gender"><label> Female</label>
-			<input type="radio" id="gender-secret" name="gender" checked
-			><label> Secret</label>
-		</div>
-		<div class="form-control">
-			<textarea maxlength="10" name="description" placeholder="Write description..."></textarea>
-		</div>
-		<div class="form-control">
-			<button type="submit">Submit</button>
-		</div>
-	</form>
+	<label class="checkbox">
+		Checkbox
+	<input id="custom-checkbox" type="checkbox" name="agree">
+		<span class="checkmark" for="custom-checkbox"></span>
+	</label>
   </body>
 </html>
