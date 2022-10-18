@@ -22,8 +22,10 @@
 		}
 		.page{
 			display: flex;
-			justify-content: center;
-			
+			justify-content:center;
+			position: relative;
+			top:200px;
+
 		}
 		.login-form{
 			display: flex;
@@ -35,6 +37,8 @@
 			background-color:aqua;
 		}
 		.form-title{
+			text-align: center;
+			width: 100%;
 			text-transform: uppercase;
 		}
 		.form-control{
@@ -48,12 +52,13 @@
 			outline: none;
 			outline: 4px;
 			margin-bottom: 8px;
+			margin-top: 4px;
 		}
-		input:focus{
+		#email{
 			border:3px solid #ff0000;
 		}
-		label{
-			margin-bottom: 4px;
+		#password{
+			border:3px solid #ff0000;
 		}
 		.submit-button{
 			width: 100%;
@@ -62,7 +67,6 @@
 			margin-top: 16px;
 			color:white;
 			text-transform: uppercase;
-			border: none;
 			border-radius: 4px;
 		}
 	 </style>
@@ -80,7 +84,7 @@
             id="email"
             name="email"
             placeholder="mail@example.com"
-            required
+            required 
           />
         </div>
         <div class="form-control">
