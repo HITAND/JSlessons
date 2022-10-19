@@ -13,11 +13,16 @@
 		*{
 			box-sizing:border-box;
 		}
-		.form{
-			height: 100vh;
+		form{
 			margin: 32px;
 		}
-		input{
+		div{
+			display:flex;
+			align-items: center;
+		}
+		input, textarea, select{
+			display: flex;
+			flex-direction: column;
 			margin:8px;
 		}
 		input[name=favouriteColor]{
@@ -29,7 +34,7 @@
   </head>
 
   <body>
-	<form class="form">
+	<form>
 		<input name="primaryLanguage" placeholder="HTML">
 		<input type="checkbox" name="agree" unchecked>
 		<input type="checkbox" name="like" checked readonly>
@@ -42,7 +47,7 @@
 		<input type="number" name="favouriteNumber" value="17">
 		<textarea name="story" maxlength="30" placeholder="A long time ago...">
 		</textarea>
-		<input name="password" value="secret">
+		<input type="password" name="password" value="secret">
 		<div class="languages">
 		<input type="radio" name="language">HTML
 		<input type="radio" name="language">CSS
@@ -57,7 +62,7 @@
 		<input name="search" type="search" placeholder="Type first letters...">
 		<input type="time" name="lunchEnd" value="14:01">
 		<input type="url" name="website" placeholder="https://website.com" required>
-		<input type="week" name="birthWeek" value="2021-W51">
+		<input type="week" value="2021-W51" name="birthWeek">
 		<input type="submit" value="Save">
 	</form>
   </body>
