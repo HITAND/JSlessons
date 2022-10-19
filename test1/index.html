@@ -14,12 +14,15 @@
 			box-sizing:border-box;
 		}
 		.form{
+			height: 100vh;
 			margin: 32px;
 		}
 		input{
 			margin:8px;
 		}
 		input[name=favouriteColor]{
+			width: 50px;
+			height:27px;
 			background-color:#ff7f50;
 		}
 	 </style>
@@ -27,7 +30,7 @@
 
   <body>
 	<form class="form">
-		<input name="primaryLanguage" placeholder="HTML" disabled>
+		<input name="primaryLanguage" placeholder="HTML">
 		<input type="checkbox" name="agree" unchecked>
 		<input type="checkbox" name="like" checked readonly>
 		<input name="favouriteColor">
@@ -37,19 +40,21 @@
 		<input type="file" name="avatar">
 		<input type="month" name="startLearning" value="2020-01">
 		<input type="number" name="favouriteNumber" value="17">
-		<textarea name="story" maxlength="5" placeholder="A long time ago...">
+		<textarea name="story" maxlength="30" placeholder="A long time ago...">
 		</textarea>
 		<input name="password" value="secret">
+		<div class="languages">
 		<input type="radio" name="language">HTML
 		<input type="radio" name="language">CSS
 		<input type="radio" name="language">JavaScript
+		</div>
 		<input type="range" name="learningProgress" value="30">
 		<select name="framework">
-			<option value="react">React</option>
 			<option value="jquery">jQuery</option>
+			<option value="react">React</option>
 			<option value="bootstrap">Bootstrap</option>
 		</select>
-		<input type="search" placeholder="Type first letters...">
+		<input name="search" type="search" placeholder="Type first letters...">
 		<input type="time" name="lunchEnd" value="14:01">
 		<input type="url" name="website" placeholder="https://website.com" required>
 		<input type="week" name="birthWeek" value="2021-W51">
