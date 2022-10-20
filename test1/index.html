@@ -14,10 +14,12 @@
 			box-sizing:border-box;
 		}
 		form{
+			display: block;
 			margin: 32px;
 		}
-		input{
-			margin:8px 0px 8px 0px;
+		input, textarea, select,div{
+			display: block;
+			margin:8px;
 		}
 		input[name=favouriteColor]{
 			width: 50px;
@@ -29,52 +31,34 @@
 
   <body>
 	<form>
-		<input name="primaryLanguage" placeholder="HTML">
-		<br>
-		<input type="checkbox" name="agree" unchecked>
+		<input name="primaryLanguage" placeholder="HTML" disabled>
+		<input type="checkbox" name="agree">
 		<input type="checkbox" name="like" checked readonly>
-		<br>
 		<input name="favouriteColor">
-		<br>
 		<input name="birthDate" type="date" value="2021-01-02">
-		<br>
 		<input type="datetime-local" name="birthTime" value="2024-10-04T13:02">
-		<br>
 		<input type="email" name="email" placeholder="example@domain.com">
-		<br>
 		<input type="file" name="avatar">
-		<br>
 		<input type="month" name="startLearning" value="2020-01">
-		<br>
 		<input type="number" name="favouriteNumber" value="17">
-		<br>
 		<textarea name="story" maxlength="30" placeholder="A long time ago...">
 		</textarea>
-		<br>
 		<input type="password" name="password" value="secret">
-		<br>
 		<div class="languages">
-		<br>
 		<input type="radio" name="language">HTML
 		<input type="radio" name="language" checked>CSS
 		<input type="radio" name="language">JavaScript
 		</div>
 		<input type="range" name="learningProgress" value="30">
-		<br>
 		<select name="framework">
 			<option value="jquery">jQuery</option>
 			<option value="react">React</option>
 			<option value="bootstrap">Bootstrap</option>
 		</select>
-		<br>
 		<input name="search" type="search" placeholder="Type first letters...">
-		<br>
 		<input type="time" name="lunchEnd" value="14:01">
-		<br>
 		<input type="url" name="website" placeholder="https://website.com" required>
-		<br>
 		<input type="week" value="2021-W51" name="birthWeek">
-		<br>
 		<input type="submit" value="Save">
 	</form>
   </body>
