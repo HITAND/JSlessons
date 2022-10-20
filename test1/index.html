@@ -14,56 +14,83 @@
 			box-sizing:border-box;
 		}
 		form{
-			display: block;
 			margin: 32px;
 		}
-		input, textarea, select,div{
-			display: block;
+		input, select, textarea{
 			margin:8px;
-		}
-		input[name=favouriteColor]{
-			width: 50px;
-			height:27px;
-		}
-		.languages{
-			display: flex;
-			align-items:center;
-			margin:0;
 		}
 	 </style>
   </head>
 
   <body>
 	<form>
+		<div class="form-control">
 		<input name="primaryLanguage" value="HTML" disabled>
+		</div>
+		<div class="form-control">
 		<input type="checkbox" name="agree">
+		</div>
+		<div class="form-control">
 		<input type="checkbox" name="like" checked readonly>
+		</div>
+		<div class="form-control">
 		<input type="color" name="favouriteColor" value="#ff7f50">
+		</div>
+		<div class="form-control">
 		<input name="birthDate" type="date" value="2021-01-02">
+		</div>
+		<div class="form-control">
 		<input type="datetime-local" name="birthTime" value="2024-10-04T13:02">
+		</div>
+		<div class="form-control">
 		<input type="email" name="email" placeholder="example@domain.com">
+		</div>
+		<div class="form-control">
 		<input type="file" name="avatar">
+		</div>
+		<div class="form-control">
 		<input type="month" name="startLearning" value="2020-01">
+		</div>
+		<div class="form-control">
 		<input type="number" name="favouriteNumber" value="17">
+		</div>
+		<div class="form-control">
 		<textarea name="story" cols="30" rows="5" placeholder="A long time ago...">
 		</textarea>
+		</div>
+		<div class="form-control">
 		<input type="password" name="password" value="secret">
+		</div>
 		<div class="languages">
 		<input type="radio" name="language">HTML
 		<input type="radio" name="language" checked>CSS
 		<input type="radio" name="language">JavaScript
 		</div>
+		<div class="form-control">
 		<input type="range" name="learningProgress" value="30">
+		</div>
+		<div class="form-control">
 		<select name="framework">
 			<option value="jquery">jQuery</option>
 			<option value="react">React</option>
 			<option value="bootstrap">Bootstrap</option>
 		</select>
+		</div>
+		<div class="form-control">
 		<input name="search" type="search" placeholder="Type first letters...">
+		</div>
+		<div class="form-control">
 		<input type="time" name="lunchEnd" value="14:01">
+		</div>
+		<div class="form-control">
 		<input type="url" name="website" placeholder="https://website.com" required>
+		</div>
+		<div class="form-control">
 		<input type="week" value="2021-W51" name="birthWeek">
+		</div>
+		<div class="form-control">
 		<input type="submit" value="Save">
+		</div>
 	</form>
   </body>
 </html>
