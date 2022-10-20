@@ -10,82 +10,65 @@
       crossorigin="anonymous"
     />
 	 <style>
-		*{box-sizing:border-box;}
-		form{margin: 32px;}
-		.form-control{margin:8px;}
-		.languages{margin: 8px;}
-		input[name="language"]{margin-right: 5px;}
+		*{
+			box-sizing:border-box;
+		}
+		table{
+			width: 500px;
+			margin:16px;
+		}
+		table,td,th{
+			border:1px solid black;
+			border-collapse: collapse;
+		}
+		td, th{
+			padding: 4px;
+			text-align: right;
+		}
+		div{
+			overflow-x:auto;
+		}
 	 </style>
   </head>
-
   <body>
-	<form>
-		<div class="form-control">
-		<input name="primaryLanguage" value="HTML" disabled>
-		</div>
-		<div class="form-control">
-		<input type="checkbox" name="agree">
-		</div>
-		<div class="form-control">
-		<input type="checkbox" name="like" checked readonly>
-		</div>
-		<div class="form-control">
-		<input type="color" name="favouriteColor" value="#ff7f50">
-		</div>
-		<div class="form-control">
-		<input name="birthDate" type="date" value="2021-01-02">
-		</div>
-		<div class="form-control">
-		<input type="datetime-local" name="birthTime" value="2024-10-04T13:02">
-		</div>
-		<div class="form-control">
-		<input type="email" name="email" placeholder="example@domain.com">
-		</div>
-		<div class="form-control">
-		<input type="file" name="avatar">
-		</div>
-		<div class="form-control">
-		<input type="month" name="startLearning" value="2020-01">
-		</div>
-		<div class="form-control">
-		<input type="number" name="favouriteNumber" value="17">
-		</div>
-		<div class="form-control">
-		<textarea name="story" cols="30" rows="5" placeholder="A long time ago..."></textarea>
-		</div>
-		<div class="form-control">
-		<input type="password" name="password" value="secret">
-		</div>
-		<div class="languages">
-		<input type="radio" name="language">HTML
-		<input type="radio" name="language" checked>CSS
-		<input type="radio" name="language">JavaScript
-		</div>
-		<div class="form-control">
-		<input type="range" name="learningProgress" value="30">
-		</div>
-		<div class="form-control">
-		<select name="framework">
-			<option value="jquery">jQuery</option>
-			<option value="react">React</option>
-			<option value="bootstrap">Bootstrap</option>
-		</select>
-		</div>
-		<div class="form-control">
-		<input name="search" type="search" placeholder="Type first letters...">
-		</div>
-		<div class="form-control">
-		<input type="time" name="lunchEnd" value="14:01">
-		</div>
-		<div class="form-control">
-		<input type="url" name="website" placeholder="https://website.com" required>
-		</div>
-		<div class="form-control">
-		<input type="week" value="2021-W51" name="birthWeek">
-		</div>
-		<div class="form-control">
-		<input type="submit" value="Save">
-		</div>
-	</form>
+	<div>
+	<table>
+		<caption>Shopping list</caption>
+		<thead>
+			<tr>
+			<th>Product</th>
+			<th>Amount</th>
+			<th>Price</th>
+			<th>Subtotal</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+			<td>Milk</td>
+			<td>3</td>
+			<td>$2</td>
+			<td>$6</td>
+			</tr>
+			<tr>
+				<td>Bread</td>
+				<td>4</td>
+				<td>$1</td>
+				<td>$4</td>
+			</tr>
+			<tr>
+				<td>Meat</td>
+				<td>5</td>
+				<td>$10</td>
+				<td>$50</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="3">Total</td>
+				<td>60</td>
+			</tr>
+		</tfoot>
+	</table>
+ </div>
   </body>
 </html>
