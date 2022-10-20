@@ -28,13 +28,14 @@
 		.languages{
 			display: flex;
 			align-items:center;
+			margin:0;
 		}
 	 </style>
   </head>
 
   <body>
 	<form>
-		<input name="primaryLanguage" placeholder="HTML" disabled>
+		<input name="primaryLanguage" value="HTML" disabled>
 		<input type="checkbox" name="agree">
 		<input type="checkbox" name="like" checked readonly>
 		<input type="color" name="favouriteColor" value="#ff7f50">
@@ -44,7 +45,7 @@
 		<input type="file" name="avatar">
 		<input type="month" name="startLearning" value="2020-01">
 		<input type="number" name="favouriteNumber" value="17">
-		<textarea name="story"cols="30" rows="5" placeholder="A long time ago...">
+		<textarea name="story" cols="30" rows="5" placeholder="A long time ago...">
 		</textarea>
 		<input type="password" name="password" value="secret">
 		<div class="languages">
