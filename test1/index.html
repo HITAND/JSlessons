@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Chess board</title>
+    <title>SVG</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
@@ -10,158 +10,36 @@
       crossorigin="anonymous"
     />
 	 <style>
-		*{
-			box-sizing: border-box;
+		.row{
+			display: flex;
 		}
-		table{
-			margin:16px;
+		.small-bird{
+			width: 64px;
+			height: 64px;
 		}
-		table, td{
-			border:1px solid black;
-			border-collapse: collapse;
+		.large-bird{
+			width: 320px;
+			height:320px;
 		}
-		td{
-			text-align: center;
-			width: 50px;
-			height:50px;
+		.column{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			flex:1;
 		}
-		tr:nth-child(even) > td:nth-child(odd){
-			background-color: black;
-		}
-		tr:nth-child(odd) > td:nth-child(even){
-			background-color: black;
-		}
-tr:first-child td:nth-child(n), 
-tr:last-child td:nth-child(n),
-tr:nth-child(n) td:first-child, 
-tr:nth-child(n) td:last-child {
-  background-color: white;
-  border:0px;
-}
 	 </style>
   </head>
+
   <body>
-    <table>
-      <tr>
-        <td></td>
-        <td>A</td>
-        <td>B</td>
-        <td>C</td>
-        <td>D</td>
-        <td>E</td>
-        <td>F</td>
-        <td>G</td>
-        <td>H</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>A</td>
-        <td>B</td>
-        <td>C</td>
-        <td>D</td>
-        <td>E</td>
-        <td>F</td>
-        <td>G</td>
-        <td>H</td>
-        <td></td>
-      </tr>
-    </table>
+    <div class="row">
+      <div class="column">
+        <img class="small-bird" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task1/image.png" alt="PNG small bird" />
+        <img class="large-bird" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task1/image.png" alt="PNG large bird" />
+      </div>
+      <div class="column">
+        <img class="small-bird" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task1/image.svg" alt="SVG small bird" />
+        <img class="large-bird" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task1/image.svg" alt="SVG large bird" />
+      </div>
+    </div>
   </body>
 </html>
