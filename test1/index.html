@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Forms</title>
+    <title>Chess board</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
@@ -11,81 +11,157 @@
     />
 	 <style>
 		*{
-			box-sizing:border-box;
+			box-sizing: border-box;
 		}
 		table{
-			width: 500px;
-			font-family: Arial, Helvetica, sans-serif;
+			margin:16px;
 		}
-		caption{
-			margin:0px 0px 8px 0px;
-		}
-		table,td,th{
+		table, td{
 			border:1px solid black;
 			border-collapse: collapse;
 		}
-		td,th{
-			padding: 4px;
-			text-align: right;
-			line-height:31px;
+		td{
+			text-align: center;
+			width: 50px;
+			height:50px;
 		}
-		th{
-			background-color: aqua;
+		tr:nth-child(even) > td:nth-child(odd){
+			background-color: black;
 		}
-		div{
-			overflow-x:auto;
+		tr:nth-child(odd) > td:nth-child(even){
+			background-color: black;
 		}
-		tfoot{
-			font-weight: 700;
-		}
-		tbody > tr:nth-child(odd){
-			background: color #f2f2f2;
-		}
-		tbody > tr:hover{
-			background-color: #aaa;
-			color:#fff;
-		}
+tr:first-child td:nth-child(n), 
+tr:last-child td:nth-child(n),
+tr:nth-child(n) td:first-child, 
+tr:nth-child(n) td:last-child {
+  background-color: white;
+  border:0px;
+}
 	 </style>
   </head>
   <body>
-	<div>
-	<table>
-		<caption>Shopping list</caption>
-		<thead>
-			<tr>
-			<th>Product</th>
-			<th>Amount</th>
-			<th>Price</th>
-			<th>Subtotal</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-			<td>Milk</td>
-			<td>3</td>
-			<td>$2</td>
-			<td>$6</td>
-			</tr>
-			<tr>
-				<td>Bread</td>
-				<td>4</td>
-				<td>$1</td>
-				<td>$4</td>
-			</tr>
-			<tr>
-				<td>Meat</td>
-				<td>5</td>
-				<td>$10</td>
-				<td>$50</td>
-			</tr>
-		</tbody>
-		<tfoot>
-			<tr>
-				<td colspan="3">Total</td>
-				<td>$60</td>
-			</tr>
-		</tfoot>
-	</table>
- </div>
+    <table>
+      <tr>
+        <td></td>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+        <td>G</td>
+        <td>H</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+        <td>G</td>
+        <td>H</td>
+        <td></td>
+      </tr>
+    </table>
   </body>
 </html>
