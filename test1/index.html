@@ -36,34 +36,30 @@
 			border-radius: 2px;
 			background-color:black;
 			opacity: 1;
+			position:relative;
 			animation:moving 2s infinite, blinking 2s infinite;
 		}
       @keyframes moving {
-        from{
-			position:relative;
+         0%{
          left: 0;
-			right:0;
          opacity: 1;
         }
-		  to{
-			position: relative;
-			left:70px;
-			right:70px;
-		  }
-		  /* 25%{
-			position:relative;
+		  25%{
 			left: 70px;
-
 		  }
 		  50%{
-			position:relative;
-			right: 0;
+			left:0;
+		  }
+		  75%{
+			right:0;
 			opacity: 1;
 		  }
 		  100%{
-			position:relative;
 			right: 70px;
-		  } */
+		  }
+		  125%{
+			right:0;
+		  }
       }
 
       @keyframes blinking {
@@ -79,7 +75,6 @@
       }
     </style>
   </head>
-
   <body>
     <div class="container">
       <div class="spinner">
