@@ -28,7 +28,7 @@
 			font-family: monospace;
 			font-size: 16px;
 			text-transform: uppercase;
-			animation:blinking 2s linear infinite;
+			animation:blinking 2s linear infinite, blinking 2s infinite;
 		}
 		.rect{
 			width: 10px;
@@ -37,7 +37,6 @@
 			background-color:black;
 			opacity: 1;
 			animation:moving 2s infinite, blinking 2s infinite;
-			transition-timing-function: linear;
 		}
       @keyframes moving {
         0% {
@@ -52,19 +51,12 @@
 		  }
 		  50%{
 			position:relative;
-			left: 0;
-		  }
-		  75%{
-			position:relative;
 			right: 0;
+			opacity: 1;
 		  }
 		  100%{
 			position:relative;
 			right: 70px;
-		  }
-		  125%{
-			position: relative;
-			right: 0;
 		  }
       }
 
