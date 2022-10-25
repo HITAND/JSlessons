@@ -2,56 +2,82 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>SVG</title>
+    <title>Images</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
       integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
       crossorigin="anonymous"
     />
-	 <style>
-		*{box-sizing:border-box;}
-
-		.square{
-			width: 100px;
-			height:100px;
-			background-color:coral;
-			position: absolute;
-			animation: nove 2s;
-			animation-iteration-count: infinite;
-			animation-direction:alternate;
-			animation-iteration-count:2;
+    <style>
+		*{
+			box-sizing:border-box;
 		}
-
-		@keyframes nove{
-			0%{
-				left:0;
-				right:0;
-				background-color:coral;
-			}
-			25%{
-				left:300px;
-				top:0;
-				background-color:aqua;
-			}
-			50%{
-				left:300px;
-				top:300px;
-			}
-			75%{
-				left:0;
-				top:300px;
-				background-color:bisque;
-			}
-			100%{
-				left:0;
-				top:0;
-				background-color:darkgreen;
-			}
+		.container{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100vw;
+			height: 100vh;
 		}
-	 </style>
+		.spinner{
+			display: flex;
+			flex-direction: column;
+		}
+		.spinner-text{
+			font-family: monospace;
+			font-size: 16px;
+			text-transform: uppercase;
+			animation:blinking 2s linear infinite;
+		}
+		.rect{
+			width: 10px;
+			height:4px;
+			border-radius: 2px;
+			background-color:black;
+			animation:moving 2s infinite, blinking 2s infinite;
+		}
+      @keyframes moving {
+        0% {
+			position: relative;
+          left: 0;
+          opacity: 1;
+        }
+        25% {
+			position: relative;
+          left: 70px;
+        }
+		  50%{
+			positon:relative;
+			right: 0;
+			opacity: 1;
+		  }
+		  100%{
+			position: relative;
+			right:70px;
+		  }
+      }
+
+      @keyframes blinking {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
   </head>
+
   <body>
-	<div class="square"></div>
+    <div class="container">
+      <div class="spinner">
+        <span class="spinner-text">Loading...</span>
+        <div class="rect"></div>
+      </div>
+    </div>
   </body>
 </html>
