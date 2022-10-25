@@ -13,43 +13,25 @@
 		*{
 			box-sizing:border-box;
 		}
-		body{
-			display: flex;
-			justify-content: center;
-			align-items:center;
-			width: 100vw;
-			height:100vh;
-		}
-		.block{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 250px;
+		.square{
+			width: 100px;
 			height:100px;
-			border-radius: 10px;
-			background-color: coral;
-			font-family: Arial, Helvetica, sans-serif;
-			font-size:14px;
-			font-weight: 700;
-			color:white;
-			text-transform: uppercase;		
-			animation-name:ease;
-			animation-duration: 2s;
-			animation-fill-mode: forwards;
-			position: relative;
+			background-color:tomato;
+			transform: translate(200px, 100px) rotate(45deg) scale(1.5);
 		}
-		/* @keyframes ease{
-			from{
-				top:-100px;
-			}
-			to{
-				top:calc(50vh - 50px);
-			}
-		} */
+
+		p {
+  margin: 0 32px;
+  padding: 8px;
+  background-color: antiquewhite;
+  display: inline-block;
+  border-radius: 4px;
+}
 	 </style>
   </head>
 
   <body>
-    <div class="block">Hello, animated world!</div>
+	<div class="square"></div>
+	<p>I am a text under the square</p>
   </body>
 </html>
