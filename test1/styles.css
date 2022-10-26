@@ -1,4 +1,4 @@
-﻿*{
+*{
 	box-sizing:border-box;
 }
 html{
@@ -31,13 +31,18 @@ body{
 .nav-list-item{
 	background-color:#808080;
 	margin-bottom: 0.5em;
-	padding-left: 10px;
+	padding-left: 8px;
+	color:white;
+	overflow: hidden;
+   text-overflow: ellipsis;
 }
 
 .nav-list-link{
+	width: 100%;
 	color:white;
 	line-height: 2em;
 	text-decoration: none;
+	white-space: nowrap;
 }
 
 .css-units{
@@ -47,18 +52,17 @@ body{
 	font-weight: 700;
 }
 .section__header{
-	font-size: 4em;
+	font-size: 2rem;
 	text-align: center;
 }
 .news{
 	width: 20%;
 }
-h1{
+.header{
 	color:white;
 	text-align: center;
 	background:linear-gradient(60deg, red, orange);
 	margin:0;
-	padding: 16px;
 }
 
 .main{
