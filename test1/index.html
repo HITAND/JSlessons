@@ -12,52 +12,22 @@
 		*{
 			box-sizing:border-box;
 		}
-		.navigation{
+		main{
 			display: flex;
-			flex: 1;
-			background-color:#ff7f50;
-			min-height:200px;
 		}
-		.products-list{
-			display: flex;
-			flex: 1;
-			background-color:#006400;
-			min-height:200px;
-		}
-		.news{
-			display: flex;
-			flex: 1;
-			background-color:#0ff;
-			min-height:200px;
-		}
-		span{
-			background-color:beige;
-			padding: 8px;
-			border-radius: 4px;
-			font-family: Verdana, Geneva, Tahoma, sans-serif;
-			text-transform: lowercase;
-			margin: auto;
-		}
-		@media screen and (min-width: 600px){
-			.products{
-				display: flex;
-				flex: 2;
-			}
-		}
-		@media screen and (min-width: 900px){
-			.content{
-				display: flex;
-			}
+		picture{
+			max-width: 100%;
+			margin:auto;
 		}
 	 </style>
   </head>
   <body>
-	<main class="content">
-	<section class="products">
-	<div class="navigation"><span>Navigation</span></div>
-	<div class="products-list"><span>Products List</span></div>
-  </section>
-  <div class="news"><span>News</span></div>
-  </main>
+	<main>
+		<picture>
+			<source srcset="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/task3/big.jpeg" media="(min-width:600px)">
+			<source srcset="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/task3/small.jpg">
+			<img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/task3/big.jpeg" alt="Tree on the land">
+		</picture>
+	</main>
 </body>
 </html>
