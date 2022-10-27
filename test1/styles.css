@@ -52,7 +52,7 @@ body{
 	font-weight: 700;
 }
 .section__header{
-	font-size: 2rem;
+	font-size: 5vw;
 	text-align: center;
 }
 .news{
@@ -64,6 +64,7 @@ body{
 	background:linear-gradient(60deg, red, orange);
 	margin:0;
 }
+
 
 .main{
 	display: flex;
