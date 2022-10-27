@@ -13,37 +13,44 @@
 		*{
 			box-sizing:border-box;
 		}
-		.square{
-			width: 100px;
-			height:100px;
-			background-color:#8a2be2;
-			margin:8px;
-		}
-		.container{
+		.navigation, .products-list, .news{
 			display: flex;
-			height:100vh;
-			justify-content: center;
-			align-items: center;
+			background-color:#fa8;
+			min-height:200px;
 		}
-
-		@media screen and (max-width:600px){
-			.square{
-				background-color:#ff7f50;
+		.products-list{
+			background-color:#8af;
+		}
+		.news{
+			background-color:#a18;
+		}
+		span{
+			background-color:beige;
+			padding: 4px;
+			border-radius: 4px;
+			text-transform: lowercase;
+			margin: auto;
+		}
+		@media screen and (min-width: 600px){
+			.products{
+				display: flex;
+				flex-grow: 2;
 			}
 		}
-		@media screen and (orientation:portrait){
-			.container{
-				flex-direction: column;
+		@media screen and (min-width: 900px){
+			.content{
+				display: flex;
 			}
 		}
-		 
 	 </style>
   </head>
   <body>
-	<div class="container">
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-	</div>
-  </body>
+	<main class="content">
+	<section class="Products">
+	<div class="navigation"><span>navigation</span></div>
+	<div class="products-list"><span>Products List</span></div>
+  </section>
+  <div class="news"><span>News</span></div>
+  </main>
+</body>
 </html>
