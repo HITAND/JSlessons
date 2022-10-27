@@ -13,16 +13,23 @@
 		*{
 			box-sizing:border-box;
 		}
-		.navigation, .products-list, .news{
+		.navigation{
 			display: flex;
-			background-color:#fa8;
+			background-color:#ff7f50;
 			min-height:200px;
+			flex-grow: 1;
 		}
 		.products-list{
-			background-color:#8af;
+			display: flex;
+			background-color:#006400;
+			min-height:200px;
+			flex-grow: 1;
 		}
 		.news{
-			background-color:#a18;
+			display: flex;
+			background-color:#0ff;
+			min-height:200px;
+			flex-grow: 1;
 		}
 		span{
 			background-color:beige;
@@ -46,8 +53,8 @@
   </head>
   <body>
 	<main class="content">
-	<section class="Products">
-	<div class="navigation"><span>navigation</span></div>
+	<section class="products">
+	<div class="navigation"><span>Navigation</span></div>
 	<div class="products-list"><span>Products List</span></div>
   </section>
   <div class="news"><span>News</span></div>
