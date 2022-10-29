@@ -115,7 +115,7 @@ footer{
 	}
 }
 
-@media screen and (min-width:600px) and (max-width:1200px){
+@media screen and (min-width:600px) and (max-width:1199px){
 	.main{
 		flex-wrap: wrap;
 	}
@@ -124,5 +124,8 @@ footer{
 	}
 	.section{
 		width: 80%;
+	}
+	.img2{
+		margin-bottom: 25px;
 	}
 }
