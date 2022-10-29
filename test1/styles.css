@@ -71,14 +71,12 @@ body{
 	display: none;
 	width: 100%;
 	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-	margin-bottom: 25px;
 }
 
 .img2{
-	display: block;
+	visibility: visible;
 	width: 100%;
 	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-	margin-bottom: 25px;
 }
 
 .main{
@@ -109,9 +107,10 @@ footer{
 	}
 	.img1{
 		display: block;
-		margin-bottom: 25px;
+		margin-bottom: 10px;
 	}
 	.img2{
+		visibility: hidden;
 		display: none;
 	}
 }
@@ -127,7 +126,6 @@ footer{
 		width: 80%;
 	}
 	.img2{
-		display: block;
 		margin-bottom: 25px;
 	}
 }
