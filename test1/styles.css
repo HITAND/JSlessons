@@ -127,6 +127,7 @@ footer{
 		width: 80%;
 	}
 	.img2{
+		display: block;
 		margin-bottom: 25px;
 	}
 }
