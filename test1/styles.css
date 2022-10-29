@@ -71,7 +71,7 @@ body{
 	display: none;
 	width: 100%;
 	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-	margin-bottom: 200px;
+	margin-bottom: 25px;
 }
 
 .img2{
@@ -108,7 +108,7 @@ footer{
 	}
 	.img1{
 		display: block;
-		margin-bottom: 200px;
+		margin-bottom: 25px;
 	}
 	.img2{
 		display: none;
