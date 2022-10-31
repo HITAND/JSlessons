@@ -68,15 +68,17 @@ body{
 }
 
 .img1{
-	display: none;
+	display: block;
 	width: 100%;
 	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+	margin-bottom: 25px;
 }
 
 .img2{
 	display: block;
 	width: 100%;
 	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+	margin-bottom: 25px;
 }
 
 .main{
@@ -91,7 +93,7 @@ footer{
 	padding: 0.5em;
 }
 
-@media screen and (max-width:599px) {
+/* @media screen and (max-width:599px) {
 	.main{
 	display: flex;
 	flex-direction: column;
@@ -112,7 +114,7 @@ footer{
 	.img2{
 		display: none;
 	}
-}
+} */
 
 @media screen and (min-width:600px) and (max-width:1199px){
 	.main{
