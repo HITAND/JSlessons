@@ -109,14 +109,14 @@ footer{
 	}
 	.img1{
 		display: block;
-		margin-bottom: 10px;
+		margin-bottom: 25px;
 	}
 	.img2{
 		display: none;
 	}
 }
 
-@media screen and (min-width:600px) and (max-width:1300px){
+@media screen and (min-width:600px) and (max-width:1200px){
 	.main{
 		flex-wrap: wrap;
 	}
@@ -127,6 +127,7 @@ footer{
 		width: 80%;
 	}
 	.img2{
+		display: block;
 		margin-bottom: 25px;
 	}
 	.img1{
