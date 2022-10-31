@@ -75,7 +75,8 @@ body{
 }
 
 .img2{
-	visibility: visible;
+	display: block;
+	background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/hw2/big.png');
 	width: 100%;
 	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
 	margin-bottom: 25px;
@@ -112,7 +113,6 @@ footer{
 		margin-bottom: 25px;
 	}
 	.img2{
-		visibility: hidden;
 		display: none;
 	}
 }
