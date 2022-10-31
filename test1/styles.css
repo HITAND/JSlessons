@@ -93,7 +93,7 @@ footer{
 	padding: 0.5em;
 }
 
-/* @media screen and (max-width:599px) {
+@media screen and (max-width:599px) {
 	.main{
 	display: flex;
 	flex-direction: column;
@@ -114,9 +114,9 @@ footer{
 	.img2{
 		display: none;
 	}
-} */
+}
 
-@media screen and (min-width:600px) and (max-width:1199px){
+@media screen and (min-width:600px) and (max-width:1300px){
 	.main{
 		flex-wrap: wrap;
 	}
@@ -128,5 +128,8 @@ footer{
 	}
 	.img2{
 		margin-bottom: 25px;
+	}
+	.img1{
+		display: none;
 	}
 }
