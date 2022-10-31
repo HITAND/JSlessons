@@ -68,17 +68,15 @@ body{
 }
 
 .img1{
-	display: none;
-	width: 100%;
+	display: block;
+	width: 0%;
 	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-	margin-bottom: 25px;
 }
 
 .img2{
 	display: block;
 	width: 100%;
 	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-	margin-bottom: 25px;
 }
 
 .main{
@@ -109,7 +107,8 @@ footer{
 	}
 	.img1{
 		display: block;
-		margin-bottom: 25px;
+		width: 100%;
+		margin-bottom: 10px;
 	}
 	.img2{
 		display: none;
@@ -125,8 +124,5 @@ footer{
 	}
 	.section{
 		width: 80%;
-	}
-	.img2{
-		margin-bottom: 25px;
 	}
 }
