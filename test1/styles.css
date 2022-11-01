@@ -10,20 +10,14 @@ body {
 }
 
 @media (orientation: portrait) {
-  .body {
+  .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
   }
 }
 @media (orientation: landscape) {
   .container {
     display: flex;
-  }
-}
-@media screen and (width: 400px) {
-  .square {
-    margin: 8px;
   }
 }
 .square {
@@ -32,10 +26,9 @@ body {
   background-color: coral;
   margin: 8px;
 }
-@media screen and (width: 599px) {
+@media screen and (max-width: 599px) {
   .square {
     background-color: #ff7f50;
-    margin: 16px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 899px) {

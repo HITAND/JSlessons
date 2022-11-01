@@ -12,10 +12,9 @@ body{
 }
 
 @media (orientation: portrait) {
-	.body{
+	.container{
 		display: flex;
-		align-items: center;
-		justify-content: center;
+		flex-direction: column;
 	}
 }
 
@@ -25,23 +24,14 @@ body{
 	}
 }
 
-@media screen and (width: 400px){
-		.square{
-			margin: 8px;
-		}
-	}
-
 .square {
 	width:100px;
 	height:100px;
 	background-color: coral;
 	margin:8px;
-
-
 	
 	@include for-small {
 		background-color:#ff7f50;
-		margin:16px;
 	}
 
 	@include for-medium-up {
