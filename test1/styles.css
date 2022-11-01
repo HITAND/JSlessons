@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@media (orientation: portrait) {
+  .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (orientation: landscape) {
+  .container {
+    display: flex;
+  }
+}
+@media screen and (width: 400px) {
+  .square {
+    margin: 8px;
+  }
+}
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin: 8px;
+}
+@media screen and (width: 599px) {
+  .square {
+    background-color: #ff7f50;
+    margin: 16px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .square {
+    background-color: #8a2be2;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+  .square {
+    background-color: #a61;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .square {
+    background-color: #c47;
+  }
+}/*# sourceMappingURL=styles.css.map */
