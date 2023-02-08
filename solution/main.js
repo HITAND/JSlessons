@@ -1,15 +1,14 @@
 ﻿export const event = {
 	guests: [
-		{name: 'Tom', email:'t@gmail.com', age: 17},
-		{name: 'Bob', email:'b@gmail.com', age: 18},
+		{ name: 'John', age: 18, email:'examplr@server.com' }
 	],
 	message:'Welcome to the party!',
-	getInvitations() {
+	getInvintations() {
 		return this.guests
 		.filter(({age}) => age >= 18)
 		.map(({name, email}) => ({
 			email,
-			text: `Dear ${name}! ${this.message}`,
+			message: `Dear ${name}! ${this.message}`,
 		}))
 	}
 }
