@@ -9,7 +9,7 @@
 export const getItemsArray = () => {
 	const elementsArray = document.querySelectorAll('.tool');
 
-	Array.from(elementsArray);
-	console.dir(elementsArray);
-	return elementsArray;
+	Array.from([elementsArray]);
+	console.dir([elementsArray]);
+	return [elementsArray];
 }
