@@ -1,7 +1,8 @@
-﻿const divElem = document.querySelector('.rect_div');
+const divElem = document.querySelector('.rect_div');
 const pElem = document.querySelector('.rect_p');
 const spanElem = document.querySelector('.rect_span');
 const clearBtn = document.querySelector('.clear-btn');
+const removeHandlersBtn = document.querySelector('.remove-handlers-btn');
 
 const logTarget = (text, color) => {
 	const eventsListElem = document.querySelector('.events-list');
