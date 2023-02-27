@@ -16,16 +16,16 @@ const logGreenDiv = logTarget.bind(null, 'div', 'green');
 const logGreenP = logTarget.bind(null, 'p', 'green');
 const logGreenSpan = logTarget.bind(null, 'span', 'green');
 
-
-divElem.addEventListener('click', logGreenDiv);
-pElem.addEventListener('click', logGreenP);
-spanElem.addEventListener('click', logGreenP);
-
-
 const logGreyDiv = logTarget.bind(null, 'div', 'grey');
 const logGreyP = logTarget.bind(null, 'p', 'grey');
 const logGreySpan = logTarget.bind(null, 'span', 'grey');
 
+
 divElem.addEventListener('click', logGreyDiv);
+divElem.addEventListener('click', logGreenDiv);
+
 pElem.addEventListener('click', logGreyP);
+pElem.addEventListener('click', logGreenP);
+
 spanElem.addEventListener('click', logGreySpan);
+spanElem.addEventListener('click', logGreenP);
