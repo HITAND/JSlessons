@@ -30,7 +30,7 @@ pElem.addEventListener('click', logGreenP);
 spanElem.addEventListener('click', logGreySpan, true);
 spanElem.addEventListener('click', logGreenSpan);
 
-attachHandlersBtn.addEventListener('click', () => {
+removeHandlersBtn.addEventListener('click', () => {
 divElem.removeEventListener('click', logGreyDiv, true);
 divElem.removeEventListener('click', logGreenDiv);
 
