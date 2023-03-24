@@ -1,11 +1,11 @@
-const LoginFrom = document.querySelector('.login-form');
+const loginFrom = document.querySelector('.login-form');
 const submitButton = document.querySelector('.submit-button');
 
 const urlBase = 'https://641c4f4db556e431a86b2ad9.mockapi.io/api/v1/users';
 
 function funcLogin(e) {
 	e.preventDefault();
-	const formData = Object.fromEntries(new FormData(LoginFrom));
+	const formData = Object.fromEntries(new FormData(loginFrom));
 	const newUser = {
 		email: formData.email,
 		Name: formData.name,
@@ -14,7 +14,7 @@ function funcLogin(e) {
 	asincFunc(newUser)
 	.then((response) => response.json())
 	.then((data) => alert(JSON.stringify(data)))
-	.finally(() => LoginFrom.reset());
+	.finally(() => loginFrom.reset());
 }
 
 function asincFunc(obj) {
@@ -28,7 +28,7 @@ function asincFunc(obj) {
 }
 
 function funcValid() {
-	const isValid = LoginFrom.reportValidity();
+	const isValid = loginFrom.reportValidity();
 
 	isValid ? (submitButton.disabled = false) : (submitButton.disabled = true);
 
