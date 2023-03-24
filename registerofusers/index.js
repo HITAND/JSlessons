@@ -1,46 +1,41 @@
-const loginFrom = document.querySelector('.login-form');
-const submitButton = document.querySelector('.submit-button');
+const baseUrl = "https://641c4f4db556e431a86b2ad9.mockapi.io/api/v1/users";
 
-const urlBase = 'https://641c4f4db556e431a86b2ad9.mockapi.io/api/v1/users';
+const formElem = document.querySelector(".login-form");
+const registerBtn = document.querySelector(".submit-button");
 
-function funcLogin(e) {
-	e.preventDefault();
-	const formData = Object.fromEntries(new FormData(loginFrom));
-	const newUser = {
-		email: formData.email,
-		Name: formData.name,
-		Password: formData.password,
-	 };
-	asincFunc(newUser)
-	.then((response) => response.json())
-	.then((data) => alert(JSON.stringify(data)))
-	.finally(() => loginFrom.reset());
+function createUser(userData) {
+  return fetch(baseUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json;charset=utf-8",
+    },
+    body: JSON.stringify(userData),
+  });
 }
 
-function asincFunc(obj) {
-		return fetch(urlBase, {
-		method: 'POST',
-		body: JSON.stringify(obj),
-		headers: {
-			'Content-Type': 'application/json;charset=utf-8'
-		}
-	});
+function onRegisterUser(event) {
+  event.preventDefault();
+  const formData = Object.fromEntries(new FormData(formElem));
+  const newUser = {
+    email: formData.email,
+    name: formData.name,
+    password: formData.password,
+  };
+  createUser(newUser)
+    .then((response) => response.json())
+    .then((data) => alert(JSON.stringify(data)))
+    .finally(() => formElem.reset());
 }
 
-function funcValid() {
-	const isValid = loginFrom.reportValidity();
+const onFormsubmit = (event) => {
+  event.preventDefault();
+  const isValid = formElem.reportValidity();
+  isValid ? (registerBtn.disabled = false) : (registerBtn.disabled = true);
 
-	isValid ? (submitButton.disabled = false) : (submitButton.disabled = true);
+  if (!registerBtn.hasAttribute("disabled")) {
+    registerBtn.setAttribute("enabled", "");
+  }
+};
 
-	if (!submitButton.hasAttribute("disabled")) {
-		submitButton.setAttribute("enabled", "");
-	}
-}
-
-document.addEventListener('submit', funcLogin);
-document.addEventListener('input', funcValid);
-
-
-
-
-
+formElem.addEventListener("input", onFormsubmit);
+formElem.addEventListener("submit", onRegisterUser);
