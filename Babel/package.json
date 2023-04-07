@@ -14,5 +14,8 @@
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4"
+  },
+    "dependencies": {
+    "core-js": "^3.25.0"
   }
 }
