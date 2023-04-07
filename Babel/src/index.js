@@ -1,13 +1,8 @@
-﻿import { printProfile } from "./profile"
+// file path: src/index.js
 
-const userData = {
-  name: "Tom",
-  age: 17,
-}
+const data = [1, 2, [3, 4, [5, 6]]];
 
-const profile = {
-  ...userData,
-  company: "Gromcode",
-}
+const result = data.flat(2);
+console.log(result);
 
-printProfile(profile)
+Promise.resolve().finally();
